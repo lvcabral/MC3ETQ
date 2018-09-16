@@ -1,0 +1,725 @@
+function _tabcos
+param ang
+do case
+case ang=001
+   return(         0.999847695)
+case ang=002
+   return(         0.999390827)
+case ang=003
+   return(         0.998629535)
+case ang=004
+   return(         0.997564050)
+case ang=005
+   return(         0.996194698)
+case ang=006
+   return(         0.994521895)
+case ang=007
+   return(         0.992546152)
+case ang=008
+   return(         0.990268069)
+case ang=009
+   return(         0.987688341)
+case ang=010
+   return(         0.984807753)
+case ang=011
+   return(         0.981627183)
+case ang=012
+   return(         0.978147601)
+case ang=013
+   return(         0.974370065)
+case ang=014
+   return(         0.970295726)
+case ang=015
+   return(         0.965925826)
+case ang=016
+   return(         0.961261696)
+case ang=017
+   return(         0.956304756)
+case ang=018
+   return(         0.951056516)
+case ang=019
+   return(         0.945518576)
+case ang=020
+   return(         0.939692621)
+case ang=021
+   return(         0.933580426)
+case ang=022
+   return(         0.927183855)
+case ang=023
+   return(         0.920504853)
+case ang=024
+   return(         0.913545458)
+case ang=025
+   return(         0.906307787)
+case ang=026
+   return(         0.898794046)
+case ang=027
+   return(         0.891006524)
+case ang=028
+   return(         0.882947593)
+case ang=029
+   return(         0.874619707)
+case ang=030
+   return(         0.866025404)
+case ang=031
+   return(         0.857167301)
+case ang=032
+   return(         0.848048096)
+case ang=033
+   return(         0.838670568)
+case ang=034
+   return(         0.829037573)
+case ang=035
+   return(         0.819152044)
+case ang=036
+   return(         0.809016994)
+case ang=037
+   return(         0.798635510)
+case ang=038
+   return(         0.788010754)
+case ang=039
+   return(         0.777145961)
+case ang=040
+   return(         0.766044443)
+case ang=041
+   return(         0.754709580)
+case ang=042
+   return(         0.743144825)
+case ang=043
+   return(         0.731353702)
+case ang=044
+   return(         0.719339800)
+case ang=045
+   return(         0.707106781)
+case ang=046
+   return(         0.694658370)
+case ang=047
+   return(         0.681998360)
+case ang=048
+   return(         0.669130606)
+case ang=049
+   return(         0.656059029)
+case ang=050
+   return(         0.642787610)
+case ang=051
+   return(         0.629320391)
+case ang=052
+   return(         0.615661475)
+case ang=053
+   return(         0.601815023)
+case ang=054
+   return(         0.587785252)
+case ang=055
+   return(         0.573576436)
+case ang=056
+   return(         0.559192903)
+case ang=057
+   return(         0.544639035)
+case ang=058
+   return(         0.529919264)
+case ang=059
+   return(         0.515038075)
+case ang=060
+   return(         0.500000000)
+case ang=061
+   return(         0.484809620)
+case ang=062
+   return(         0.469471563)
+case ang=063
+   return(         0.453990500)
+case ang=064
+   return(         0.438371147)
+case ang=065
+   return(         0.422618262)
+case ang=066
+   return(         0.406736643)
+case ang=067
+   return(         0.390731128)
+case ang=068
+   return(         0.374606593)
+case ang=069
+   return(         0.358367950)
+case ang=070
+   return(         0.342020143)
+case ang=071
+   return(         0.325568154)
+case ang=072
+   return(         0.309016994)
+case ang=073
+   return(         0.292371705)
+case ang=074
+   return(         0.275637356)
+case ang=075
+   return(         0.258819045)
+case ang=076
+   return(         0.241921896)
+case ang=077
+   return(         0.224951054)
+case ang=078
+   return(         0.207911691)
+case ang=079
+   return(         0.190808995)
+case ang=080
+   return(         0.173648178)
+case ang=081
+   return(         0.156434465)
+case ang=082
+   return(         0.139173101)
+case ang=083
+   return(         0.121869343)
+case ang=084
+   return(         0.104528463)
+case ang=085
+   return(         0.087155743)
+case ang=086
+   return(         0.069756474)
+case ang=087
+   return(         0.052335956)
+case ang=088
+   return(         0.034899497)
+case ang=089
+   return(         0.017452406)
+case ang=090
+   return(         0.000000000)
+case ang=091
+   return(        -0.017452406)
+case ang=092
+   return(        -0.034899497)
+case ang=093
+   return(        -0.052335956)
+case ang=094
+   return(        -0.069756474)
+case ang=095
+   return(        -0.087155743)
+case ang=096
+   return(        -0.104528463)
+case ang=097
+   return(        -0.121869343)
+case ang=098
+   return(        -0.139173101)
+case ang=099
+   return(        -0.156434465)
+case ang=100
+   return(        -0.173648178)
+case ang=101
+   return(        -0.190808995)
+case ang=102
+   return(        -0.207911691)
+case ang=103
+   return(        -0.224951054)
+case ang=104
+   return(        -0.241921896)
+case ang=105
+   return(        -0.258819045)
+case ang=106
+   return(        -0.275637356)
+case ang=107
+   return(        -0.292371705)
+case ang=108
+   return(        -0.309016994)
+case ang=109
+   return(        -0.325568154)
+case ang=110
+   return(        -0.342020143)
+case ang=111
+   return(        -0.358367950)
+case ang=112
+   return(        -0.374606593)
+case ang=113
+   return(        -0.390731128)
+case ang=114
+   return(        -0.406736643)
+case ang=115
+   return(        -0.422618262)
+case ang=116
+   return(        -0.438371147)
+case ang=117
+   return(        -0.453990500)
+case ang=118
+   return(        -0.469471563)
+case ang=119
+   return(        -0.484809620)
+case ang=120
+   return(        -0.500000000)
+case ang=121
+   return(        -0.515038075)
+case ang=122
+   return(        -0.529919264)
+case ang=123
+   return(        -0.544639035)
+case ang=124
+   return(        -0.559192903)
+case ang=125
+   return(        -0.573576436)
+case ang=126
+   return(        -0.587785252)
+case ang=127
+   return(        -0.601815023)
+case ang=128
+   return(        -0.615661475)
+case ang=129
+   return(        -0.629320391)
+case ang=130
+   return(        -0.642787610)
+case ang=131
+   return(        -0.656059029)
+case ang=132
+   return(        -0.669130606)
+case ang=133
+   return(        -0.681998360)
+case ang=134
+   return(        -0.694658370)
+case ang=135
+   return(        -0.707106781)
+case ang=136
+   return(        -0.719339800)
+case ang=137
+   return(        -0.731353702)
+case ang=138
+   return(        -0.743144825)
+case ang=139
+   return(        -0.754709580)
+case ang=140
+   return(        -0.766044443)
+case ang=141
+   return(        -0.777145961)
+case ang=142
+   return(        -0.788010754)
+case ang=143
+   return(        -0.798635510)
+case ang=144
+   return(        -0.809016994)
+case ang=145
+   return(        -0.819152044)
+case ang=146
+   return(        -0.829037573)
+case ang=147
+   return(        -0.838670568)
+case ang=148
+   return(        -0.848048096)
+case ang=149
+   return(        -0.857167301)
+case ang=150
+   return(        -0.866025404)
+case ang=151
+   return(        -0.874619707)
+case ang=152
+   return(        -0.882947593)
+case ang=153
+   return(        -0.891006524)
+case ang=154
+   return(        -0.898794046)
+case ang=155
+   return(        -0.906307787)
+case ang=156
+   return(        -0.913545458)
+case ang=157
+   return(        -0.920504853)
+case ang=158
+   return(        -0.927183855)
+case ang=159
+   return(        -0.933580426)
+case ang=160
+   return(        -0.939692621)
+case ang=161
+   return(        -0.945518576)
+case ang=162
+   return(        -0.951056516)
+case ang=163
+   return(        -0.956304756)
+case ang=164
+   return(        -0.961261696)
+case ang=165
+   return(        -0.965925826)
+case ang=166
+   return(        -0.970295726)
+case ang=167
+   return(        -0.974370065)
+case ang=168
+   return(        -0.978147601)
+case ang=169
+   return(        -0.981627183)
+case ang=170
+   return(        -0.984807753)
+case ang=171
+   return(        -0.987688341)
+case ang=172
+   return(        -0.990268069)
+case ang=173
+   return(        -0.992546152)
+case ang=174
+   return(        -0.994521895)
+case ang=175
+   return(        -0.996194698)
+case ang=176
+   return(        -0.997564050)
+case ang=177
+   return(        -0.998629535)
+case ang=178
+   return(        -0.999390827)
+case ang=179
+   return(        -0.999847695)
+case ang=180
+   return(        -1.000000000)
+case ang=181
+   return(        -0.999847695)
+case ang=182
+   return(        -0.999390827)
+case ang=183
+   return(        -0.998629535)
+case ang=184
+   return(        -0.997564050)
+case ang=185
+   return(        -0.996194698)
+case ang=186
+   return(        -0.994521895)
+case ang=187
+   return(        -0.992546152)
+case ang=188
+   return(        -0.990268069)
+case ang=189
+   return(        -0.987688341)
+case ang=190
+   return(        -0.984807753)
+case ang=191
+   return(        -0.981627183)
+case ang=192
+   return(        -0.978147601)
+case ang=193
+   return(        -0.974370065)
+case ang=194
+   return(        -0.970295726)
+case ang=195
+   return(        -0.965925826)
+case ang=196
+   return(        -0.961261696)
+case ang=197
+   return(        -0.956304756)
+case ang=198
+   return(        -0.951056516)
+case ang=199
+   return(        -0.945518576)
+case ang=200
+   return(        -0.939692621)
+case ang=201
+   return(        -0.933580426)
+case ang=202
+   return(        -0.927183855)
+case ang=203
+   return(        -0.920504853)
+case ang=204
+   return(        -0.913545458)
+case ang=205
+   return(        -0.906307787)
+case ang=206
+   return(        -0.898794046)
+case ang=207
+   return(        -0.891006524)
+case ang=208
+   return(        -0.882947593)
+case ang=209
+   return(        -0.874619707)
+case ang=210
+   return(        -0.866025404)
+case ang=211
+   return(        -0.857167301)
+case ang=212
+   return(        -0.848048096)
+case ang=213
+   return(        -0.838670568)
+case ang=214
+   return(        -0.829037573)
+case ang=215
+   return(        -0.819152044)
+case ang=216
+   return(        -0.809016994)
+case ang=217
+   return(        -0.798635510)
+case ang=218
+   return(        -0.788010754)
+case ang=219
+   return(        -0.777145961)
+case ang=220
+   return(        -0.766044443)
+case ang=221
+   return(        -0.754709580)
+case ang=222
+   return(        -0.743144825)
+case ang=223
+   return(        -0.731353702)
+case ang=224
+   return(        -0.719339800)
+case ang=225
+   return(        -0.707106781)
+case ang=226
+   return(        -0.694658370)
+case ang=227
+   return(        -0.681998360)
+case ang=228
+   return(        -0.669130606)
+case ang=229
+   return(        -0.656059029)
+case ang=230
+   return(        -0.642787610)
+case ang=231
+   return(        -0.629320391)
+case ang=232
+   return(        -0.615661475)
+case ang=233
+   return(        -0.601815023)
+case ang=234
+   return(        -0.587785252)
+case ang=235
+   return(        -0.573576436)
+case ang=236
+   return(        -0.559192903)
+case ang=237
+   return(        -0.544639035)
+case ang=238
+   return(        -0.529919264)
+case ang=239
+   return(        -0.515038075)
+case ang=240
+   return(        -0.500000000)
+case ang=241
+   return(        -0.484809620)
+case ang=242
+   return(        -0.469471563)
+case ang=243
+   return(        -0.453990500)
+case ang=244
+   return(        -0.438371147)
+case ang=245
+   return(        -0.422618262)
+case ang=246
+   return(        -0.406736643)
+case ang=247
+   return(        -0.390731128)
+case ang=248
+   return(        -0.374606593)
+case ang=249
+   return(        -0.358367950)
+case ang=250
+   return(        -0.342020143)
+case ang=251
+   return(        -0.325568154)
+case ang=252
+   return(        -0.309016994)
+case ang=253
+   return(        -0.292371705)
+case ang=254
+   return(        -0.275637356)
+case ang=255
+   return(        -0.258819045)
+case ang=256
+   return(        -0.241921896)
+case ang=257
+   return(        -0.224951054)
+case ang=258
+   return(        -0.207911691)
+case ang=259
+   return(        -0.190808995)
+case ang=260
+   return(        -0.173648178)
+case ang=261
+   return(        -0.156434465)
+case ang=262
+   return(        -0.139173101)
+case ang=263
+   return(        -0.121869343)
+case ang=264
+   return(        -0.104528463)
+case ang=265
+   return(        -0.087155743)
+case ang=266
+   return(        -0.069756474)
+case ang=267
+   return(        -0.052335956)
+case ang=268
+   return(        -0.034899497)
+case ang=269
+   return(        -0.017452406)
+case ang=270
+   return(         0.000000000)
+case ang=271
+   return(         0.017452406)
+case ang=272
+   return(         0.034899497)
+case ang=273
+   return(         0.052335956)
+case ang=274
+   return(         0.069756474)
+case ang=275
+   return(         0.087155743)
+case ang=276
+   return(         0.104528463)
+case ang=277
+   return(         0.121869343)
+case ang=278
+   return(         0.139173101)
+case ang=279
+   return(         0.156434465)
+case ang=280
+   return(         0.173648178)
+case ang=281
+   return(         0.190808995)
+case ang=282
+   return(         0.207911691)
+case ang=283
+   return(         0.224951054)
+case ang=284
+   return(         0.241921896)
+case ang=285
+   return(         0.258819045)
+case ang=286
+   return(         0.275637356)
+case ang=287
+   return(         0.292371705)
+case ang=288
+   return(         0.309016994)
+case ang=289
+   return(         0.325568154)
+case ang=290
+   return(         0.342020143)
+case ang=291
+   return(         0.358367950)
+case ang=292
+   return(         0.374606593)
+case ang=293
+   return(         0.390731128)
+case ang=294
+   return(         0.406736643)
+case ang=295
+   return(         0.422618262)
+case ang=296
+   return(         0.438371147)
+case ang=297
+   return(         0.453990500)
+case ang=298
+   return(         0.469471563)
+case ang=299
+   return(         0.484809620)
+case ang=300
+   return(         0.500000000)
+case ang=301
+   return(         0.515038075)
+case ang=302
+   return(         0.529919264)
+case ang=303
+   return(         0.544639035)
+case ang=304
+   return(         0.559192903)
+case ang=305
+   return(         0.573576436)
+case ang=306
+   return(         0.587785252)
+case ang=307
+   return(         0.601815023)
+case ang=308
+   return(         0.615661475)
+case ang=309
+   return(         0.629320391)
+case ang=310
+   return(         0.642787610)
+case ang=311
+   return(         0.656059029)
+case ang=312
+   return(         0.669130606)
+case ang=313
+   return(         0.681998360)
+case ang=314
+   return(         0.694658370)
+case ang=315
+   return(         0.707106781)
+case ang=316
+   return(         0.719339800)
+case ang=317
+   return(         0.731353702)
+case ang=318
+   return(         0.743144825)
+case ang=319
+   return(         0.754709580)
+case ang=320
+   return(         0.766044443)
+case ang=321
+   return(         0.777145961)
+case ang=322
+   return(         0.788010754)
+case ang=323
+   return(         0.798635510)
+case ang=324
+   return(         0.809016994)
+case ang=325
+   return(         0.819152044)
+case ang=326
+   return(         0.829037573)
+case ang=327
+   return(         0.838670568)
+case ang=328
+   return(         0.848048096)
+case ang=329
+   return(         0.857167301)
+case ang=330
+   return(         0.866025404)
+case ang=331
+   return(         0.874619707)
+case ang=332
+   return(         0.882947593)
+case ang=333
+   return(         0.891006524)
+case ang=334
+   return(         0.898794046)
+case ang=335
+   return(         0.906307787)
+case ang=336
+   return(         0.913545458)
+case ang=337
+   return(         0.920504853)
+case ang=338
+   return(         0.927183855)
+case ang=339
+   return(         0.933580426)
+case ang=340
+   return(         0.939692621)
+case ang=341
+   return(         0.945518576)
+case ang=342
+   return(         0.951056516)
+case ang=343
+   return(         0.956304756)
+case ang=344
+   return(         0.961261696)
+case ang=345
+   return(         0.965925826)
+case ang=346
+   return(         0.970295726)
+case ang=347
+   return(         0.974370065)
+case ang=348
+   return(         0.978147601)
+case ang=349
+   return(         0.981627183)
+case ang=350
+   return(         0.984807753)
+case ang=351
+   return(         0.987688341)
+case ang=352
+   return(         0.990268069)
+case ang=353
+   return(         0.992546152)
+case ang=354
+   return(         0.994521895)
+case ang=355
+   return(         0.996194698)
+case ang=356
+   return(         0.997564050)
+case ang=357
+   return(         0.998629535)
+case ang=358
+   return(         0.999390827)
+case ang=359
+   return(         0.999847695)
+case ang=360
+   return(         1.000000000)
+endcase
+

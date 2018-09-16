@@ -1,0 +1,38 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun∑es CA-Clipper 
+Title2:NumＳicas
+Copyright:Prograph Informtica
+
+@@Sen()
+ ---------> Seno de um ハgulo em Radianos
+@@Cos()
+ ---------> Cosseno de um ハgulo em Radianos
+@@Tan()
+ ---------> Tangente de um ハgulo em Radianos 
+@@ATan()
+ --------> Arco-Tangente em Radianos de um n｣mero 
+@@Pi()
+ ----------> Retorna o valor de PI
+@@Gr2Rd()
+ -------> Converte ハgulo de Graus para Radianos
+@@Rd2Gr()
+ -------> Converte ハgulo de Radianos para Graus
+@@Hx2Dc()
+ -------> Converte valor de Hexa para Decimal (00 a FF)
+@@Dc2Hx()
+ -------> Converte valor de Decimal para Hexa (0 a 255)
+@@Impar()
+ -------> Retorna .t. se o valor for impar
+@@Par()
+ ---------> Retorna .t. se o valor for par
+@@Calcula()
+ -----> Calculadora POP-UP
+@@Random()
+ ------> Retorna um n｣mero aleat｢rio com 'n' d｡gitos
+@@DV10()
+ --------> Calcula o D｡gito Verificador na base 10
+@@DV11()
+ --------> Calcula o D｡gito Verificador na base 11
+@@DVCB()
+ --------> Calcula o Digito Verificador para Codigo de Barra

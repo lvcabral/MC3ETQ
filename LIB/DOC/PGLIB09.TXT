@@ -1,0 +1,24 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun‡”es CA-Clipper 
+Title2:Baixo N¡vel
+Copyright:Prograph Inform tica
+
+@@IntBIOS()
+ -----> Realiza a chamada …s Interrup‡”es da BIOS
+@@High()
+ --------> Retorna os 8 bits altos de um Registrador de 16 bits
+@@Low()
+ ---------> Retorna os 8 bits baixos de um Registrador de 16 bits
+@@HL()
+ ----------> Retorna um Registrador de 16 bits 
+@@Ponteiro()
+ ----> Retorna o ponteiro de mem¢ria de uma Cadeia de Carac.
+@@IsBit()
+ ----> Verifica se um Determinado Bit de um Caracter est  ligado 
+@@BitClr()
+ ----> Desliga um Determinado Bit de um Caracter
+@@BitSet()
+ ----> Liga um Determinado Bit de um Caracter
+@@ReBoot()
+ ------> Executa a Reinicializa‡„o do Sistema

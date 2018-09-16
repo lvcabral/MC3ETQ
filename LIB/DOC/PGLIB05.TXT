@@ -1,0 +1,44 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun‡”es CA-Clipper 
+Title2:Arquivo/Disco
+Copyright:Prograph Inform tica
+
+@@Atributo()
+ ----> Altera os atributos de arquivos e diret¢rios
+@@CriaDir()
+ -----> Cria Sub-Diret¢rio
+@@MudaDir()
+ -----> Muda o Sub-Diret¢rio Atual
+@@NomeDir()
+ -----> Retorna o Nome do Sub-Diret¢rio Atual
+@@RemvDir()
+ -----> Remove um Sub-Diret¢rio
+@@DirStructure()
+ ---> Retorna um Vetor com todos os Diret¢rios de um Disco
+@@TreeAsArray()
+ ---> Retorna um Vetor com a Arvore de Diretorios
+@@FBackup()
+ -----> Realiza o Backup em baixo n¡vel
+@@FRestore()
+ ----> Realiza a Restaura‡„o dos Discos Backup
+@@FileWindow()
+ ----> Abre uma Janela com Diretorios e Arquivos retornando a Escolha
+@@FSum()
+ --------> Retorna o CheckSum de um arquivo
+@@TstDrv()
+ ---> Testa um Floppy Disk Drive
+@@ZapDisk()
+ -----> Apaga todos os Arquivos de um diskette
+@@ReadDBF()
+ --------> Lˆ Arquivo DBF e Joga a Estrutura e os Dados em duas Matrizes
+@@WriteDBF()
+ --------> Cria um Arquivo DBF a partir de dois Arrays de Estrutura e Dados
+@@AtoV()
+ --------> Move conte£do do registro atual para Vari veis similares
+@@BtoV()
+ --------> Cria Vari veis em Branco similares aos Campos
+@@VtoA()
+ --------> Atualiza o registro atual com as Vari veis similares
+@@StrucWindow()
+ -----> Abre uma Janela com a Estrutura de um Arquivo DBF

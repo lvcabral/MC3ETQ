@@ -1,0 +1,103 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun”es CA-Clipper
+Title2: Introduo
+Copyright:Prograph Inform tica
+
+@@Descrio
+                 ีอออออออออออออออธ
+  ีออออออออออออออพ PROGRAPH.LIB  ิอออออออออออออธ
+  ณBiblioteca de Fun”es para o CA-Clipper v5.2ณ
+  ิออออออออออออออออออออออออออออออออออออออออออออพ
+
+Esta biblioteca foi criada visando dotar o CA-Clipper de
+ferramentas para torn -lo mais eficiente e principalmente
+mais abrangente quanto … sua  rea de atuao, tornando-o
+uma linguagem mais poderosa e completa.
+
+Para utiliz -la copie-a para o diretขrio \CLIP5\LIB e
+lembre-se de refernci -la durante a linkedio.
+
+Este manual eletr“nico est   organizado  por classe
+de fun”es e dividido em 10 arquivos (PGLIB??.TXT), que
+devem estar no mesmo diretขrio do DOC.EXE.
+
+Para procurar uma Funo especกfica no Manual digite
+no "prompt" do DOS por exemplo: DOC EXPLODE.
+
+@@Prograh.ch
+
+Neste Arquivo de Incluso esto definidos comandos e
+constantes para auxiliar a utilizao da  biblioteca  e
+do prขprio CA-Clipper.
+
+Comandos:
+ฤฤฤฤฤฤฤฤฤ
+
+ SET ACCENT ON/OFF
+
+Descrio: Liga/Desliga Acentuao
+
+ SET INSCURSOR ON/OFF
+
+Descrio: Liga/Desliga Mudana de Cursor com
+Insert Ligado;
+
+ DO PROCESS
+
+Descrio: O Mesmo que DO WHILE .T.;
+
+ UNTIL <lexp>
+
+Descrio: Finaliza um DO PROCESS com uma condio;
+
+ DO SWITCH
+  SWITCH <lexp> [ PERFORM <act> ]
+  ENDSWITCH
+
+Descrio: O Mesmo que DO CASE porm aceita coman-
+dos na mesma linha do SWITCH, reduzindo assim as
+linhas de programao.
+
+Constantes:
+ฤฤฤฤฤฤฤฤฤฤฤ
+ษอออออออัอออออออออออออออออออออออออออออออออออัอออออออป
+บ Const ณ Descrio                         ณ Valor บ
+วฤฤฤฤฤฤฤลฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤลฤฤฤฤฤฤฤถ
+บ AMAAG ณ "A" Maiฃsculo com acento Agudo '  ณ   01  บ
+บ AMIAG ณ "a" Minฃsculo com acento Agudo '  ณ   02  บ
+บ EMAAG ณ "E" Maiฃsculo com acento Agudo '  ณ   03  บ
+บ EMIAG ณ "e" Minฃsculo com acento Agudo '  ณ   04  บ
+บ IMAAG ณ "I" Maiฃsculo com acento Agudo '  ณ   05  บ
+บ IMIAG ณ "i" Minฃsculo com acento Agudo '  ณ   06  บ
+บ OMAAG ณ "O" Maiฃsculo com acento Agudo '  ณ   07  บ
+บ OMIAG ณ "o" Minฃsculo com acento Agudo '  ณ   08  บ
+บ UMAAG ณ "O" Maiฃsculo com acento Agudo '  ณ   09  บ
+บ UMIAG ณ "o" Minฃsculo com acento Agudo '  ณ   10  บ
+บ AMACR ณ "A" Maiฃsculo com Crase        `  ณ   11  บ
+บ AMICR ณ "a" Minฃsculo com Crase        `  ณ   12  บ
+บ AMACI ณ "A" Maiฃsculo com Circunflexo  ^  ณ   13  บ
+บ AMICI ณ "a" Minฃsculo com Circunflexo  ^  ณ   14  บ
+บ EMACI ณ "E" Maiฃsculo com Circunflexo  ^  ณ   15  บ
+บ EMICI ณ "e" Minฃsculo com Circunflexo  ^  ณ   16  บ
+บ OMACI ณ "O" Maiฃsculo com Circunflexo  ^  ณ   17  บ
+บ OMICI ณ "o" Minฃsculo com Circunflexo  ^  ณ   18  บ
+บ AMATI ณ "A" Maiฃsculo com Til          ~  ณ   19  บ
+บ AMITI ณ "a" Minฃsculo com Til          ~  ณ   20  บ
+บ OMATI ณ "O" Maiฃsculo com Til          ~  ณ   21  บ
+บ OMITI ณ "o" Minฃsculo com Til          ~  ณ   22  บ
+บ CMACE ณ "C" Cedilha Maiฃscula             ณ   23  บ
+บ CMICE ณ "c" Cedilha Minฃscula             ณ   24  บ
+บ FF    ณ Espao em Branco                  ณ   25  บ
+ศอออออออฯอออออออออออออออออออออออออออออออออออฯอออออออผ
+
+@@Crditos
+        ษออออออออออออออออออออออออออออออออออออออออป
+        บ    PROGRAPH.LIB for CA-Clipper v5.2    บ
+        บ     Verso 1.00  (C)opyRight 1994     บ
+        บ Desenvolvida pela Prograph Inform tica บ
+        บ  Sistemas  Treinamento  Consultoria  บ
+        บ                                        บ
+        บ   Rua Nicar gua, 85/101 - Espinheiro   บ
+        บ   Recife-Pe 52020-190  (081)222-0888   บ
+        ศออออออออออออออออออออออออออออออออออออออออผ

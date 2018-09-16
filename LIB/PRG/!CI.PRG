@@ -1,0 +1,57 @@
+*************************************************
+* NOME.....: !CI.PRG                            *
+* FUNCAO...: CI()                               *
+* AUTOR....: MARCELO LEAL LIMAVERDE CABRAL      *
+* SINTAXE..: CI(<expr num> ou <expr carac>)     *
+* DESCRI€AO: RETORNA CODIGOS DE IMPRESSAO       *
+*************************************************
+
+FUNC CI
+
+PARAMETERS CODIGO
+
+IF TYPE("CODIGO")="N"
+   IF CODIGO=0
+    RETURN (CHR(27)+CHR(64))
+   ELSEIF CODIGO=10
+    RETURN (CHR(30)+CHR(48))
+   ELSEIF CODIGO=12
+    RETURN (CHR(30)+CHR(50))
+   ELSEIF CODIGO=15
+    RETURN (CHR(30)+CHR(51))
+   ELSEIF CODIGO=17
+    RETURN (CHR(30)+CHR(52))
+   ELSEIF CODIGO=20
+    RETURN (CHR(30)+CHR(53))
+   ENDIF
+ELSEIF TYPE("CODIGO")="C"
+   IF UPPER(CODIGO)=='LE'
+    RETURN (CHR(27)+CHR(87)+CHR(1))
+   ELSEIF UPPER(CODIGO)=='DE'
+    RETURN (CHR(27)+CHR(87)+CHR(0))
+   ELSEIF UPPER(CODIGO)=='LN'
+    RETURN (CHR(27)+CHR(69))
+   ELSEIF UPPER(CODIGO)=='DN'
+    RETURN (CHR(27)+CHR(70))
+   ELSEIF UPPER(CODIGO)=='QC'
+    RETURN (CHR(27)+CHR(71))
+   ELSEIF UPPER(CODIGO)=='QT'
+    RETURN (CHR(27)+CHR(72))
+   ELSEIF UPPER(CODIGO)=='ID'
+    RETURN (CHR(27)+CHR(83)+CHR(1))
+   ELSEIF UPPER(CODIGO)=='EX'
+    RETURN (CHR(27)+CHR(83)+CHR(0))
+   ELSEIF UPPER(CODIGO)=='DS'
+    RETURN (CHR(27)+CHR(84))
+   ELSEIF UPPER(CODIGO)=='LL'
+    RETURN (CHR(27)+CHR(45)+CHR(01))
+   ELSEIF UPPER(CODIGO)=='DL'
+    RETURN (CHR(27)+CHR(45)+CHR(00))
+   ENDIF
+ENDIF
+
+RETURN ("")
+
+*******************************
+
+

@@ -1,0 +1,18 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun‡”es CA-Clipper 
+Title2:Impress„o
+Copyright:Prograph Inform tica
+
+@@Imprime()
+ -----> Envia uma Cadeia de Caracteres para Impressora
+@@PrtScr()
+ ------> Realiza a Impress„o da Tela
+@@CI()
+ ----------> Retorna C¢digos especiais de Impress„o
+@@Pausa()
+ -------> Faz uma Pausa na Impress„o ( com Menu de Op‡”es )
+@@Testa_Imp()
+ ---> Testa a Impressora  ( com Menu de Op‡”es )
+@@CodBarr()
+ -----> Imprime Etiquetas com C¢digo de Barras Padr„o UPC

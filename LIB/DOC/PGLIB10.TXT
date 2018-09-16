@@ -1,0 +1,26 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun‡”es CA-Clipper 
+Title2:Internas
+Copyright:Prograph Inform tica
+
+@@LinGrafI()
+ ----> Envia linhas ¡mpares de uma figura para Tela
+@@LinGrafP()
+ ----> Envia linhas pares de uma figura para Tela
+@@LinhaH()
+ ------> Desenha uma Linha Horizontal na Tela Gr fica
+@@LinhaV()
+ ------> Desenha uma Linha Vertical na Tela Gr fica
+@@TeclaEsp()
+ ----> Retorna C¢digos de Teclas Pressionadas
+@@T2I()
+ ----> Transforma uma figura da Tela para a Impressora
+@@Clock()
+ ----> Fun‡„o Base para a Fun‡„o Relogio()
+@@_TabSen()
+ ----> Tabela de Senos para a Fun‡„o Circulo()
+@@_TabCos()
+ ----> Tabela de Cossenos para a Fun‡„o Circulo()
+@@Fundo() 
+ ----> Muda a Moldura e o Fundo da Tela Gr fica

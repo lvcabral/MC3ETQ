@@ -1,0 +1,9 @@
+************
+FUNCTION EAC
+************
+PARAM STRING
+IF TYPE("_ACTEL")=="A"
+   CONVERTE(_ACTEL,_ACNTX,@STRING)
+ENDIF   
+RETURN(STRING)
+

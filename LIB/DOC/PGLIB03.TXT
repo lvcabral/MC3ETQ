@@ -1,0 +1,32 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun‡”es CA-Clipper 
+Title2:Caracter
+Copyright:Prograph Inform tica
+
+@@Centra()
+ ------> Retorna a Coluna centralizada de uma Cadeia de Carac.
+@@CheckSum()
+ ----> Retorna a soma dos c¢digos ASCII de uma Cadeia de Carac.
+@@Converte()
+ ----> Fun‡„o de Procura e Troca de Caracteres acima de 127
+@@ConvAll()
+ ----> Fun‡„o de Procura e Troca de Caracteres 
+@@ConvAC()
+ ----> Converte a Acentua‡„o de uma String
+@@Eac()
+ ---------> Retira os acentos de uma string (para indexa‡„o)
+@@Iac()
+ ---------> Transforma a acentua‡„o de uma string para imprimir
+@@Maiuscula()
+ -------> Transforma uma String no modo Nome Pr¢prio 
+@@Kripto()
+ -----> Criptografa uma Senha de 6 Digitos 
+@@DeKrip()
+ ----> Decodifica uma Senha Criptografada com a Fun‡„o Senha() ou Kripto()
+@@StrCount()
+ ----> Conta o N£mero de Ocorrˆncias de uma String em Outra 
+@@StrInv()
+ ------> Inverte os Bits de uma Cadeia de Caracteres
+@@Valor()
+ -------> Retorna o valor enviado por extenso

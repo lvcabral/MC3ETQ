@@ -1,0 +1,29 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun‡”es CA-Clipper 
+Title2:Gr ficas
+Copyright:Prograph Inform tica
+
+@@ModoGraf()
+ ----> Muda ou Retorna o Modo Gr fico atual
+@@Ponto()
+ -------> Desenha um Pixel na Tela Gr fica
+@@Linha()
+ -------> Desenha uma Linha na Tela Gr fica
+@@Quadrado()
+ ----> Desenha um Quadrado/Retƒngulo na Tela Gr fica
+@@Solido()
+ ------> Preenche com uma Cor uma  rea retangular
+@@Circulo()
+ -----> Desenha um C¡rculo na Tela Gr fica
+@@Escreve()
+ -----> Escreve na Tela Gr fica
+@@BLoad()
+ -------> Lˆ uma Tela salva em disco
+@@BSave()
+ -------> Salva uma Tela no disco
+@@RestTela()
+ ----> Restaura Tela da Mem¢ria para o Monitor
+@@SalvaTela()
+ ---> Move o conte£do da Tela para a Mem¢ria
+ 

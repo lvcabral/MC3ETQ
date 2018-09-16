@@ -1,0 +1,28 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun‡”es CA-Clipper 
+Title2:Data/Hora
+Copyright:Prograph Inform tica
+
+@@Data()
+ --------> Atualiza a data do Sistema
+@@Dia()
+ ---------> Retorna o dia da semana em portuguˆs
+@@Mes()
+ ---------> Retorna o mˆs em portuguˆs
+@@Bissexto()
+ ----> Retorna .t. se o ano da data enviada ‚ bissexto
+@@DDA()
+ ---------> Retorna o dia do ano da data enviada
+@@DtoZ()
+ --------> Comprime uma Data em 3 caracteres
+@@ZtoD()
+ --------> Descomprime uma Data
+@@Calendario()
+ --> Calend rio POP-UP
+@@Hora()
+ --------> Atualiza a hora do Sistema
+@@Now()
+ ---------> Retorna a Hora atual compactada em 4 caracteres
+@@Relogio()
+ -----> Mostra um Relogio Residente na Tela

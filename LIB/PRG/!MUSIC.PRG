@@ -1,0 +1,59 @@
+*******************************************************
+FUNCTION MUSIC
+PARAM TIPO
+IF TYPE("TIPO")#"N"
+  TIPO=1
+ENDIF
+DO CASE
+CASE TIPO=1    && PARABENS PARA VOCE
+    TONE(262,3)
+    TONE(262,1)
+    TONE(294,6)
+    TONE(262,6)
+    TONE(349,6)
+    TONE(330,15)
+CASE TIPO=2   && ATACAR
+    TONE(392,1)
+    TONE(523,1)
+    TONE(659,1)
+    TONE(784,5)
+    TONE(659,1)
+    TONE(784,15)
+CASE TIPO=3    && MUSIQUINHA
+    TONE(262,2)
+    TONE(262,2)
+    TONE(392,2)
+    TONE(392,2)
+    TONE(440,2)
+    TONE(440,2)
+    TONE(392,6)
+CASE TIPO=4     && HINO AMERICANO
+    TONE(784,3)
+    TONE(659,1)
+    TONE(523,6)
+    TONE(659,6)
+    TONE(784,6)
+    TONE(1047,15)
+CASE TIPO=5     && MARCHA FUNEBRE
+    TONE(261,8)
+    TONE(261,7)
+    TONE(261,2)
+    TONE(261,8)
+    TONE(311,7)
+    TONE(293,2)
+    TONE(293,7)
+    TONE(261,2)
+    TONE(261,7)
+    TONE(247,2)
+    TONE(261,8)
+CASE TIPO=6   && ADVERTENCIA
+    TONE(5000,5)
+    TONE(4000,4)
+    TONE(3000,3)
+    TONE(2000,2)
+CASE TIPO=7   && ERRO
+    TONE(1500,1)
+    TONE(1000,1)
+    TONE(500,2)
+ENDCASE
+RETURN(.T.)

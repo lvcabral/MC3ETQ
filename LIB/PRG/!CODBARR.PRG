@@ -1,0 +1,160 @@
+****************
+FUNCTION CODBARR
+****************
+PARAMETERS ES,DI,LINHA,NETQ
+
+IF TYPE("ES")#'A'.OR. TYPE("DI")#'A'
+   ? "ERRO: VALORES NAO ESTAO EM VETORES"
+   RETURN(.F.)
+ENDIF
+IF TYPE("NETQ")#'N'
+   NETQ=1
+ENDIF
+IF NETQ > 4
+   ? "ERRO: NUMERO INVALIDO DE COLUNAS"
+ENDIF   
+IF TYPE("LINHA")#"A"
+   PRIVATE LINHA[6*NETQ]
+   AFILL(LINHA," ")
+ENDIF
+IF LEN(LINHA)<(6*NETQ)
+   ? "ERRO: TAMANHO DO VETOR MENOR DO QUE O ESPERADO"
+   RETURN(.F.)
+ENDIF     
+DECLARE BUF[256*NETQ],PAT[10],BUFP[NETQ],BUFC[NETQ],BUFF[NETQ]
+PAT[10]='   ** *'
+PAT[01]='  **  *'
+PAT[02]='  *  **'
+PAT[03]=' **** *'
+PAT[04]=' *   **'
+PAT[05]=' **   *'
+PAT[06]=' * ****'
+PAT[07]=' *** **'
+PAT[08]=' ** ***'
+PAT[09]='   * **'
+************ ROTINA PRINCIPAL *************
+DIF=0
+FOR T = 1 TO NETQ
+   SUM=0
+   BUFP[T]=3+DIF
+   BUF[1+DIF]=0
+   BUF[2+DIF]=0
+   INV=0
+   DO GUARD_BAR
+   DIG=48
+   DO IMPR_BAR
+   FOR I=1 TO 5
+      DIG = ASC(SUBSTR(ES[T],I,1))
+      SUM = SUM + DIG - 48
+      DO IMPR_BAR
+   NEXT
+   BUFC[T]=BUFP[T]
+   DO CENTER_BAR
+   INV=1
+   FOR I=1 TO 5
+      DIG = ASC(SUBSTR(DI[T],I,1))
+      SUM = SUM + DIG - 48
+      DO IMPR_BAR
+   NEXT
+   DIG=DVCB(ES[T]+DI[T])+48
+   DO IMPR_BAR
+   BUFF[T]=BUFP[T]
+   DO GUARD_BAR
+   BUF[BUFP[T]]=0
+   BUF[BUFP[T]+1]=0
+   BUFP[T]=BUFP[T]+1
+   DIF=DIF+256
+NEXT   
+************ ROTINA DE IMPRESSAO ************** 
+FOR J=1 TO 5
+  ?? CHR(13)+CHR(27)+"J"+CHR(24)
+  DIF=0
+  DIFF=0
+  FOR T=1 TO NETQ
+    ?? CHR(27)+'L'+CHR(BUFP[T]*2)+CHR(0)
+    FOR I=1+DIFF TO BUFP[T]
+        ?? CHR(BUF[I])+CHR(BUF[I])
+    NEXT
+    ?? CHR(15)+' '
+    ?? PADR(LINHA[J+DIF],30)
+    ?? ' '+CHR(18)+' '
+    DIFF=DIFF+256
+    DIF=DIF+6
+  NEXT    
+NEXT
+AFILL(BUF,0)
+DIF=0
+FOR T = 1 TO NETQ
+   BUFP[T]=3+DIF
+   DO GUARD_BAR
+   BUFP[T]=BUFC[T]
+   DO CENTER_BAR
+   BUFP[T]=BUFF[T]
+   DO GUARD_BAR
+   BUF[BUFP[T]]=0
+   BUF[BUFP[T]+1]=0
+   BUFP[T]=BUFP[T]+1
+   DIF=DIF+256   
+NEXT   
+?? CHR(13)+CHR(27)+"J"+CHR(24)
+RDP=""
+DIF=0
+DIFF=0
+FOR T=1 TO NETQ
+  ?? CHR(27)+'L'+CHR(BUFP[T]*2)+CHR(0)
+  FOR I=1+DIFF TO BUFP[T]
+      ?? CHR(BUF[I])+CHR(BUF[I])
+  NEXT
+  ?? CHR(15)+' '+SPACE(31)+CHR(18)+' '
+  RDP=RDP+"  "+ES[T]+"   "+DI[T]+"  "+CHR(15)
+  RDP=RDP+PADR(LINHA[6+DIF],30)
+  RDP=RDP+' '+CHR(18)+' '
+  DIFF=DIFF+256  
+  DIF=DIF+6
+NEXT
+?? chr(13)+RDP
+?
+?
+RETURN(.T.)
+****************
+PROCED GUARD_BAR
+BUF[BUFP[T]+0]=255
+BUF[BUFP[T]+1]=0
+BUF[BUFP[T]+2]=255
+BUFP[T]=BUFP[T]+3
+RETURN
+*****************
+PROCED CENTER_BAR
+BUF[BUFP[T]+0]=0
+BUF[BUFP[T]+1]=255
+BUF[BUFP[T]+2]=0
+BUF[BUFP[T]+3]=255
+BUF[BUFP[T]+4]=0
+BUFP[T]=BUFP[T]+5
+RETURN
+***************
+PROCED IMPR_BAR
+XDIG=DIG-48
+IF XDIG=0
+   XDIG=10
+ENDIF
+XPAT=PAT[XDIG]
+IF INV=0
+   FOR XJ=1 TO 7
+       BUF[BUFP[T]]=0
+       IF SUBSTR(XPAT,XJ,1)='*'
+          BUF[BUFP[T]]=255
+       ENDIF
+       BUFP[T]=BUFP[T]+1
+   NEXT
+ELSE   
+   FOR XJ=1 TO 7
+       BUF[BUFP[T]]=255
+       IF SUBSTR(XPAT,XJ,1)='*'
+          BUF[BUFP[T]]=0
+       ENDIF
+       BUFP[T]=BUFP[T]+1
+   NEXT
+ENDIF   
+RETURN
+

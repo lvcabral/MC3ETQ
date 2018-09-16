@@ -1,0 +1,99 @@
+DOC 1.1 documentation file
+-----------------------------------------------------------------------
+Title1:Fun‡”es CA-Clipper 
+Title2:Tela/Edi‡„o
+Copyright:Prograph Inform tica
+
+@@Acentua()
+Sintaxe:
+--------
+   Acentua( <lLiga> )
+
+Descri‡„o:
+----------
+  Liga/Desliga a acentua‡„o em portuguˆs  no  CA-Clipper 
+  ela utiliza uma vari vel de ambiente do DOS  para sele-
+  cionar a p gina de c¢digo que est  sendo usada.
+    
+  Utilize o comando SET MODO=<n£mero> no "prompt" do DOS
+  (ou inclua no AUTOEXEC.BAT); onde <n£mero> pode ser:
+
+      1 - Tabela BRASCII (alguns monitores CGA nacionais)
+      2 - Tabela 850 (Multilingual)
+  *   3 - Tabela 860 (Portugal) 
+
+  * Tabela DEFAULT
+
+Parƒmetros:
+-----------
+  <lLiga> - se for verdadeiro (.T.) liga a acentua‡„o e 
+            se for falso (.F.) desliga.
+
+Retorno:
+--------
+  Esta fun‡„o sempre retorna o valor verdadeiro (.T.)
+
+@@CorAtr()
+ ----> Converte Atributos de Cores Caracter para Num‚ricos
+@@AtrCor()
+ ----> Converte Atributos de Cores Num‚ricos para Caracter 
+@@Cor_Tela()
+ ----> Altera a Cor de uma parte espec¡fica da Tela
+@@GetPosAttrib()
+ -----> Retorna o Atributo de um Caracter da Tela
+@@Caixa()
+ -------> Desenha uma moldura lentamente
+@@CpB()
+ ---------> Apaga a Tela de Cima para Baixo
+@@EpD()
+ ---------> Apaga a Tela da Esquerda para a Direita
+@@Explode()
+ -----> Explode uma Janela ou Moldura na Tela
+@@Grid()
+ --------> Desenha uma Janela Quadriculada
+@@Janela()
+ ------> Desenha uma Janela na Tela
+@@Confirma()
+ ----> Abre uma Janela com uma Mens. para Confirma‡„o por Menu
+@@Escala()
+ ------> Mostra uma Escala Increment vel de 0% a 100%
+@@Help()
+ --------> Help On-Line com interface pr¢pria
+@@KeyIn()
+ -------> Abre uma Janela e edita uma vari vel
+@@Msg()
+ ---------> Abre uma Janela com uma Mensagem no meio da Tela
+@@Senha()
+ -------> Recebe uma Senha de 6 d¡gitos na Tela
+@@GrafTxt()
+ -----> Cria Gr fico de Barras utilizando o Modo Texto
+@@TabASCII()
+ ----> Abre uma Janela com a Tabela de Caracteres ASCII
+@@TabBox()
+ ----> Abre uma Janela com v ria op‡”es de Moldura
+@@TabCores()
+ ----> Abre uma Janela com todas as op‡”es de Atributos de Tela
+@@InsKey()
+ ------> Abilita o Cursor Grande com Insert ligado
+@@GetASCII()
+ ----> Retorna a Fonte de Caracteres ASCII
+@@SetASCII()
+ ----> Altera a Fonte de Caracteres ASCII
+@@TextScreen()
+ ---> Retorna uma  rea da Tela no Modo Texto
+@@CapsLock()
+ ----> Retorna .t. se a tecla CapsLock estiver ligada
+@@NumLock()
+ -----> Retorna .t. se a tecla NumLock estiver ligada
+@@PutKey()
+ -----> Simula Pressionamento de Uma Tecla 
+@@SimNao()
+ ------> Critica uma variavel para "S" ou "N"
+@@CGC()
+ ---------> Retorna .t. se o CGC enviado for v lido
+@@CPF()
+ ---------> Retorna .t. se o CPF enviado for v lido
+@@Mouse()
+ -------> Permite a Utiliza‡„o e Configura‡„o do Mouse
+@@Music()
+ -------> Toca pequenos Trechos de M£sicas e Sons diversos
